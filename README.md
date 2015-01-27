@@ -3,6 +3,8 @@ Author: Y^w^L(Ye Li)
 
 Organization: University of Macau
 
+Contact: umacyeli@gmail.com
+
 #Briefing
 This repository is initially created for my possible TA workload. It relates to our familiar commandline tool curl[1] as well as its library -- libcurl[2].
 
@@ -15,32 +17,32 @@ Let's hope we can have fun in it.
 #Installation Guide
 (Test on ubuntu 14.04 LTS)
 
-''' shell
+```shell
 apt-get intall curl
-'''
+```
 
 Finish the installation of command tool curl.
 
-''' shell
+```shell
 apt-get install libcurl-dev
-'''
+```
 
 Then you may encounter some problems. You may possibly be told that libcurl-dev is a virtual package provided by some other packages. Please choose one to install.
 
 Here I pick libcurl4-openssl-dev.
 
-''' shell
+```shell
 apt-get install libcurl4-openssl-dev
-'''
+```
 
 #Compilation Guide
 Whenever you compile your code, please tell the compiler to link the libary of curl.
 
 Example compilation command: 
 
-''' shell
+```shell
 g++ simple.cpp -lcurl
-'''
+```
 
 #References
 1. http://curl.haxx.se/
