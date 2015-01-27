@@ -17,13 +17,13 @@ Let's hope we can have fun in it.
 #Installation Guide
 (Test on ubuntu 14.04 LTS)
 
-```shell
+```sh
 apt-get intall curl
 ```
 
 Finish the installation of command tool curl.
 
-```shell
+```sh
 apt-get install libcurl-dev
 ```
 
@@ -31,7 +31,7 @@ Then you may encounter some problems. You may possibly be told that libcurl-dev 
 
 Here I pick libcurl4-openssl-dev.
 
-```shell
+```sh
 apt-get install libcurl4-openssl-dev
 ```
 
@@ -40,7 +40,7 @@ Whenever you compile your code, please tell the compiler to link the libary of c
 
 Example compilation command: 
 
-```shell
+```sh
 g++ simple.cpp -lcurl
 ```
 
