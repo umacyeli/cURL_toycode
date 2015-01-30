@@ -18,7 +18,7 @@ Let's hope we can have fun in it.
 (Test on ubuntu 14.04 LTS)
 
 ```sh
-apt-get intall curl
+apt-get install curl
 ```
 
 Finish the installation of command tool curl.

@@ -3,9 +3,7 @@
 #include<iostream>
 #include<string>
 
-static std::string buffer;
-
-static int writer_callback(char *data, size_t size, size_t nmemb, std::string *buffer){
+int writer_callback(char *data, size_t size, size_t nmemb, std::string *buffer){
 	if(buffer == NULL)
 		return 0;
 	
@@ -21,6 +19,7 @@ int main(void){
 		
 	//Initialization
 	curl = curl_easy_init();
+	std::string buffer;
 	
 	if(curl) {
 		//Setting options
@@ -36,7 +35,6 @@ int main(void){
 		//Perform the request, res will get the return code
 		curl_easy_perform(curl);
 		std::cout << buffer << std::endl;
-		std::cout<< "Successfully init a curl object." << std::endl;
 	}
 
 	//always cleanup
